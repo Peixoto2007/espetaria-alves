@@ -1,235 +1,234 @@
-.corpo {
-    min-height: 100vh;
-    width: 100%;
-    background-image:
-        linear-gradient(to right, rgba(15, 12, 10, 0.88) 35%, rgba(15, 12, 10, 0.45) 100%),
-        url('/fotofundo1.jpeg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    color: #ffffff;
-    padding: 2rem 0;
-}
-
-.primeira.bloco {
-    padding: 1rem;
-    margin-left: 15rem;
-    margin-right: 15rem;
-}
-nav a {
-  position: relative;
-  text-decoration: none;
-  color: inherit;
-}
-
-nav a::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -4px;
-  width: 0;
-  height: 2px;
-  background-color: #ff603c;
-  transition: width 0.25s ease;
-}
-
-nav a:hover::after {
-  width: 100%;
-}
-.botao {
-  background-color: #ff603c;
-  color: #ffffff;
-  text-decoration: none;
-  font-weight: bold;
-  border-radius: 8px;
-  border: 1px solid #ff603c;
-  box-shadow: 0 0 12px rgba(255, 96, 60, 0.35);
-  transition: transform 0.25s ease, box-shadow 0.25s ease, background-color 0.25s ease;
-}
-
-.botao:hover {
-  background-color: #ff7354;
-  transform: translateY(-2px);
-  box-shadow: 
-    0 0 20px rgba(255, 96, 60, 0.85),
-    0 0 40px rgba(255, 96, 60, 0.45);
-}
-
-.dois {
-    max-width: 1100px;
-    margin-left: 15rem;
-    margin-right: 15rem;
-}
-
-.dois h2 em {
-    color: #ff603c;
-}
-
-.dois>p {
-    color: #aaa29a;
-}
-
-.filtros {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
-    margin: 30px 0 22px;
-}
-
-.filtro {
-    background: transparent;
-    border: 1px solid #35302b;
-    color: #c5bdb5;
-    padding: 12px 14px;
-    cursor: pointer;
-    font-size: 11px;
-    transition: 0.2s;
-}
-
-.filtro span {
-    margin-left: 8px;
-    font-size: 9px;
-    color: #93877c;
-}
-
-.filtro:hover,
-.filtro.ativo {
-    background: #ff603c;
-    border-color: #ff603c;
-    color: white;
-}
-
-.filtro.ativo span {
-    color: white;
-}
-
-.cardapio-grade {
-    display: grid;
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-    gap: 16px;
-}
-
-/* CARD */
-
-.prato {
-    background: #191715;
-    border: 1px solid #302c28;
-    overflow: hidden;
-    transition: transform 0.25s, border-color 0.25s;
-}
-
-.prato:hover {
-    transform: translateY(-4px);
-    border-color: #ff603c;
-}
-
-.prato[hidden] {
-    display: none;
-}
-
-/* FOTO */
-
-.prato-foto {
-    position: relative;
-    height: 185px;
-    overflow: hidden;
-}
-
-.prato-foto img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-    transition: transform 0.4s;
-}
-
-.prato:hover .prato-foto img {
-    transform: scale(1.06);
-}
-
-/* ETIQUETA */
-
-.etiqueta {
-    position: absolute;
-    top: 12px;
-    left: 12px;
-    background: #171411e8;
-    border: 1px solid #51483f;
-    color: white;
-    padding: 6px 10px;
-    font-size: 10px;
-}
-
-/* CONTEÚDO */
-
-.prato-corpo {
-    padding: 14px;
-}
-
-.prato-linha {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 8px;
-}
-
-.prato-linha h3 {
-    font-size: 13px;
-    margin: 0;
-    color: #f5f0e9;
-}
-
-.preco {
-    color: #ff603c;
-    font-size: 12px;
-    font-weight: bold;
-    white-space: nowrap;
-}
-
-.prato-corpo>p:not(.prato-categoria) {
-    color: #aaa29a;
-    font-size: 11px;
-    line-height: 1.6;
-    min-height: 36px;
-    margin: 12px 0 18px;
-}
-
-/* CATEGORIA */
-
-.prato-categoria {
-    border-top: 1px solid #35302b;
-    padding-top: 13px;
-    margin-bottom: 0;
-    color: #81766b;
-    font-size: 9px;
-    letter-spacing: 1.5px;
-    text-transform: uppercase;
-}
-
-.aviso-precos {
-    font-size: 11px;
-    margin-top: 20px;
-}
-
-/* RESPONSIVIDADE */
-
-@media (max-width: 900px) {
-    .cardapio-grade {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
+    .corpo {
+        min-height: 100vh;
+        width: 100%;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        color: #ffffff;
+        padding: 2rem 0;
     }
-}
 
-@media (max-width: 550px) {
-    .cardapio-grade {
-        grid-template-columns: 1fr;
+    .primeira.bloco {
+        padding: 1rem;
+        margin-left: 15rem;
+        margin-right: 15rem;
     }
+
+    nav a {
+        position: relative;
+        text-decoration: none;
+        color: inherit;
+    }
+
+    nav a::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -4px;
+        width: 0;
+        height: 2px;
+        background-color: #ff603c;
+        transition: width 0.25s ease;
+    }
+
+    nav a:hover::after {
+        width: 100%;
+    }
+
+    .botao {
+        background-color: #ff603c;
+        color: #ffffff;
+        text-decoration: none;
+        font-weight: bold;
+        border-radius: 8px;
+        border: 1px solid #ff603c;
+        box-shadow: 0 0 12px rgba(255, 96, 60, 0.35);
+        transition: transform 0.25s ease, box-shadow 0.25s ease, background-color 0.25s ease;
+    }
+
+    .botao:hover {
+        background-color: #ff7354;
+        transform: translateY(-2px);
+        box-shadow:
+            0 0 20px rgba(255, 96, 60, 0.85),
+            0 0 40px rgba(255, 96, 60, 0.45);
+    }
+
+    .dois {
+        max-width: 1100px;
+        margin-left: 15rem;
+        margin-right: 15rem;
+    }
+
+    .dois h2 em {
+        color: #ff603c;
+    }
+
+    .dois>p {
+        color: #aaa29a;
+    }
+
+    .filtros {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        margin: 30px 0 22px;
+    }
+
+    .filtro {
+        background: transparent;
+        border: 1px solid #35302b;
+        color: #c5bdb5;
+        padding: 12px 14px;
+        cursor: pointer;
+        font-size: 11px;
+        transition: 0.2s;
+    }
+
+    .filtro span {
+        margin-left: 8px;
+        font-size: 9px;
+        color: #93877c;
+    }
+
+    .filtro:hover,
+    .filtro.ativo {
+        background: #ff603c;
+        border-color: #ff603c;
+        color: white;
+    }
+
+    .filtro.ativo span {
+        color: white;
+    }
+
+    .cardapio-grade {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: 16px;
+    }
+
+    /* CARD */
+
+    .prato {
+        background: #191715;
+        border: 1px solid #302c28;
+        overflow: hidden;
+        transition: transform 0.25s, border-color 0.25s;
+    }
+
+    .prato:hover {
+        transform: translateY(-4px);
+        border-color: #ff603c;
+    }
+
+    .prato[hidden] {
+        display: none;
+    }
+
+    /* FOTO */
 
     .prato-foto {
-        height: 220px;
+        position: relative;
+        height: 185px;
+        overflow: hidden;
+    }
+
+    .prato-foto img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+        transition: transform 0.4s;
+    }
+
+    .prato:hover .prato-foto img {
+        transform: scale(1.06);
+    }
+
+    /* ETIQUETA */
+
+    .etiqueta {
+        position: absolute;
+        top: 12px;
+        left: 12px;
+        background: #171411e8;
+        border: 1px solid #51483f;
+        color: white;
+        padding: 6px 10px;
+        font-size: 10px;
+    }
+
+    /* CONTEÚDO */
+
+    .prato-corpo {
+        padding: 14px;
+    }
+
+    .prato-linha {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 8px;
     }
 
     .prato-linha h3 {
-        font-size: 14px;
+        font-size: 13px;
+        margin: 0;
+        color: #f5f0e9;
     }
-}
+
+    .preco {
+        color: #ff603c;
+        font-size: 12px;
+        font-weight: bold;
+        white-space: nowrap;
+    }
+
+    .prato-corpo>p:not(.prato-categoria) {
+        color: #aaa29a;
+        font-size: 11px;
+        line-height: 1.6;
+        min-height: 36px;
+        margin: 12px 0 18px;
+    }
+
+    /* CATEGORIA */
+
+    .prato-categoria {
+        border-top: 1px solid #35302b;
+        padding-top: 13px;
+        margin-bottom: 0;
+        color: #81766b;
+        font-size: 9px;
+        letter-spacing: 1.5px;
+        text-transform: uppercase;
+    }
+
+    .aviso-precos {
+        font-size: 11px;
+        margin-top: 20px;
+    }
+
+    /* RESPONSIVIDADE */
+
+    @media (max-width: 900px) {
+        .cardapio-grade {
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+    }
+
+    @media (max-width: 550px) {
+        .cardapio-grade {
+            grid-template-columns: 1fr;
+        }
+
+        .prato-foto {
+            height: 220px;
+        }
+
+        .prato-linha h3 {
+            font-size: 14px;
+        }
+    }
