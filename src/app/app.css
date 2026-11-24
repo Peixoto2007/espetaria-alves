@@ -1,10 +1,65 @@
-/* ==========================
-   CARDÁPIO
-========================== */
+.corpo {
+    min-height: 100vh;
+    width: 100%;
+    background-image:
+        linear-gradient(to right, rgba(15, 12, 10, 0.88) 35%, rgba(15, 12, 10, 0.45) 100%),
+        url('/fotofundo1.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #ffffff;
+    padding: 2rem 0;
+}
+
+.primeira.bloco {
+    padding: 1rem;
+    margin-left: 15rem;
+    margin-right: 15rem;
+}
+nav a {
+  position: relative;
+  text-decoration: none;
+  color: inherit;
+}
+
+nav a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0;
+  height: 2px;
+  background-color: #ff603c;
+  transition: width 0.25s ease;
+}
+
+nav a:hover::after {
+  width: 100%;
+}
+.botao {
+  background-color: #ff603c;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 8px;
+  border: 1px solid #ff603c;
+  box-shadow: 0 0 12px rgba(255, 96, 60, 0.35);
+  transition: transform 0.25s ease, box-shadow 0.25s ease, background-color 0.25s ease;
+}
+
+.botao:hover {
+  background-color: #ff7354;
+  transform: translateY(-2px);
+  box-shadow: 
+    0 0 20px rgba(255, 96, 60, 0.85),
+    0 0 40px rgba(255, 96, 60, 0.45);
+}
 
 .dois {
-
     max-width: 1100px;
+    margin-left: 15rem;
+    margin-right: 15rem;
 }
 
 .dois h2 em {
@@ -14,8 +69,6 @@
 .dois>p {
     color: #aaa29a;
 }
-
-/* FILTROS */
 
 .filtros {
     display: flex;
@@ -50,8 +103,6 @@
 .filtro.ativo span {
     color: white;
 }
-
-/* GRADE */
 
 .cardapio-grade {
     display: grid;
